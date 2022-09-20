@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin standard-btn-style {
+  @apply p-4 px-12 rounded-xl text-sm hover:-translate-y-1 transition drop-shadow-none  hover:drop-shadow-lg;
+}
+
+.form-btn {
+  @include standard-btn-style();
+}
+
+.form-btn:first-of-type {
+  @apply bg-teal-600;
+}
+
+.form-btn:last-of-type {
+  @apply bg-rose-500;
+}
+
+.reset-btn {
+  @apply p-2 px-8 rounded border border-purple-500 text-xs hover:bg-purple-500 text-gray-700 hover:text-white;
+}
