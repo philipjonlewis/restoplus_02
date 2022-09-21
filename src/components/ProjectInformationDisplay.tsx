@@ -94,6 +94,13 @@ const ProjectInformationDisplay = () => {
             <p>Database : Firestore Database</p>
           </div>
         </div>
+        <div className="pl-2 mt-2">
+          <p className="text-sm font-bold mb-1">Deployment</p>
+          <div className="pl-2 text-xs">
+            <p>Front End - Netlify</p>
+            <p>Database - Google Firebase</p>
+          </div>
+        </div>
       </div>
     </div>
   );
