@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { firebaseAuth, firebaseDb } from '../database/firebaseClient';
-import { doc, setDoc } from '@firebase/firestore';
 
 const Counter = ({ isLoading }) => {
   const { countValue } = useSelector((state) => state.count);
-  const [localCount, setLocalCount] = useState(countValue);
+  const [loadingMessage, setLoadingMessage] = useState('Loading...');
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (isLoading) {
+        setLoadingMessage('Something wrong with the database');
+      }
+    }, 5000);
+  }, []);
 
   return (
     <div className="flex flex-col justify-center">
@@ -22,7 +28,10 @@ const Counter = ({ isLoading }) => {
             countValue.toFixed(2)
           )
         ) : (
-          <p className="text-xs">Getting data from firebase...</p>
+          <div className="flex flex-col justify-start items-center">
+            <img src="/Ripple.gif" className="h-12" alt="" />
+            <p className="text-xs">{loadingMessage}</p>
+          </div>
         )}
       </div>
     </div>

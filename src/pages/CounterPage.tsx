@@ -41,6 +41,7 @@ const CounterPage = () => {
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
+          toast.error('Try refreshing the page');
           // ...
         });
     };

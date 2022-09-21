@@ -32,7 +32,8 @@ const ProjectInformationDisplay = () => {
           </a>
         </div>
       </div>
-      <div>
+
+      <div className="hidden lg:block">
         <p className="text-lg font-bold pb-2">Challenge 02 Criteria</p>
         <p className="text-xs pb-4">
           This challenge is a serverless programming challenge where you will be{' '}
@@ -63,7 +64,7 @@ const ProjectInformationDisplay = () => {
           </li>
         </ul>
       </div>
-      <div className="flex gap-4 my-4 justify-start items-center  w-fit  ">
+      <div className="hidden lg:flex gap-4 my-4 justify-start items-center  w-fit  ">
         <div className="hover:bg-blue-700 bg-blue-500 flex items-center p-2 rounded-lg text-white">
           <GitHubIcon />{' '}
           <a
@@ -75,7 +76,7 @@ const ProjectInformationDisplay = () => {
           </a>
         </div>
       </div>
-      <div className="w-fit">
+      <div className="w-fit hidden lg:block">
         <p className="text-xl font-bold">Tech Stack</p>
         <div className="pl-2">
           <p className="text-sm font-bold mb-1">Front End</p>
