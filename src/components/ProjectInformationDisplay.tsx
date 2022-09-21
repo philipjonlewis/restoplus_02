@@ -63,15 +63,17 @@ const ProjectInformationDisplay = () => {
           </li>
         </ul>
       </div>
-      <div className="flex my-4 justify-start items-center hover:bg-blue-700 bg-blue-500 w-fit p-2 py-4 rounded-lg text-white">
-        <GitHubIcon />{' '}
-        <a
-          className="pl-2 cursor-pointer"
-          target="_blank"
-          href="https://github.com/philipjonlewis/restoplus_02"
-        >
-          Project Repo
-        </a>
+      <div className="flex gap-4 my-4 justify-start items-center  w-fit  ">
+        <div className="hover:bg-blue-700 bg-blue-500 flex items-center p-2 rounded-lg text-white">
+          <GitHubIcon />{' '}
+          <a
+            className="pl-2 cursor-pointer"
+            target="_blank"
+            href="https://github.com/philipjonlewis/restoplus_02"
+          >
+            Project Repo
+          </a>
+        </div>
       </div>
       <div className="w-fit">
         <p className="text-xl font-bold">Tech Stack</p>
