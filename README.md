@@ -15,6 +15,10 @@ using Google firebase to achieve the following.
 
 ### [Project Link](https://lewisrestoplusfirebase.netlify.app/)
 
+## Deployed Prototype Video Dropbox Link
+
+### [Deployed Prototype](https://www.dropbox.com/s/0prgeh96wcn7n08/lewis_restoplus_firebase.mov?dl=0)
+
 ## Project Repository
 
 ### [Project Repo](https://github.com/philipjonlewis/restoplus_02)
